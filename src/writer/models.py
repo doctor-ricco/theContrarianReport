@@ -12,6 +12,6 @@ class Article(models.Model):
     title = models.CharField(max_length=TITLE_MAXLEN, verbose_name=_t('Title'))
     content = models.TextField(max_length=CONTENT_MAXLEN, verbose_name=_t('Content'))
     date_posted = models.DateTimeField(default=timezone.now)
-    is_premium = models.BooleanField(default=False, verbose_name=_t('Is this a premium article?'))
+    is_premium = models.BooleanField(default=False, verbose_name=_t('Premium Article'))
 
     user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)

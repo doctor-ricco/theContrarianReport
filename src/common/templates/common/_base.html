@@ -13,9 +13,9 @@
     {% endblock %}
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center sticky-top shadow-s">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center sticky-top shadow-md">
         <a class="navbar-brand main-heading" href="{% url 'home' %}" style="margin-left: 25px;"> 
-            The Contrarian Report {% block account_label %} {% endblock %}
+            The Contrarian Report 
         </a>
         <button class="navbar-toggler"
                 type="button"
@@ -29,7 +29,7 @@
         </button>
 
         <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
-            <ul class="navbar-nav {% block navbar_item_margin %} ms-auto {% endblock %}">
+            <ul class="navbar-nav">
 
                 {% block navbar_option_1 %}
                 <li class="nav-item">
