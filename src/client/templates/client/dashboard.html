@@ -6,6 +6,18 @@
     <div class="container bg-white shadow p-5 mt-5 form-layout text-center">
         <h3 class="mb-1">{% translate 'Welcome back, ' %} {{ user.first_name }} {{ user.last_name }} </h3>
         <p><em>{% translate 'A contrarian since:' %} {{ user.date_joined|date:"d F Y" }}</em></p>
-        <p class="text-account-writer mb-2">Reader</p>
+        <div class="d-flex justify-content-center align-items-center gap-3 mb-2">
+            <p class="text-account-writer mb-0">Reader</p>
+            <span class="text-muted">|</span>
+            <p class="mb-0">
+                {% if subscription_plan == 'premium' %}
+                    <span class="text-account-premium">Premium Client</span>
+                {% elif subscription_plan == 'standard' %}
+                    <span class="text-account-client">Standard Client</span>
+                {% else %}
+                    <span class="text-account-no-subscription">No Subscription</span>
+                {% endif %}
+            </p>
+        </div>
     </div>
 {% endblock %}
