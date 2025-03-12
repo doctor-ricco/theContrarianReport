@@ -14,67 +14,69 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center sticky-top shadow-md">
-        <a class="navbar-brand d-flex align-items-center" href="{% url 'home' %}">
-            <img src="{% static 'images/logo.png' %}" alt="Logo" class="navbar-logo me-2">
-            The Contrarian Report {% block account_label %} {% endblock %}
-        </a>
-        <button class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="container" style="padding-left: 4rem;">
+            <a class="navbar-brand d-flex align-items-center" href="{% url 'home' %}">
+                <img src="{% static 'images/logo.png' %}" alt="Logo" class="navbar-logo me-2">
+                The Contrarian Report {% block account_label %} {% endblock %}
+            </a>
+            <button class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+            <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
 
-                {% block navbar_option_1 %}
-                <li class="nav-item">
-                    <a class="btn btn-secondary navbar-btn" type="button"  
-                        href="{% url option_url %}">{% translate option_label %}</a>
-                    </li>
-                {% endblock %}
+                    {% block navbar_option_1 %}
+                    <li class="nav-item">
+                        <a class="btn btn-secondary navbar-btn" type="button"  
+                            href="{% url option_url %}">{% translate option_label %}</a>
+                        </li>
+                    {% endblock %}
+                    
+                    {% block navbar_option_2 %}
+                    <li class="nav-item">
+                        <a class="btn btn-secondary navbar-btn" type="button"  
+                            href="{% url option_url %}">{% translate option_label %}</a>
+                        </li>
+                    {% endblock %}
+                    
+                    {% block navbar_option_3 %}
+                    <li class="nav-item">
+                        <a class="btn btn-secondary navbar-btn" type="button"  
+                            href="{% url option_url %}">{% translate option_label %}</a>
+                        </li>
+                    {% endblock %}
+                    
+                    {% block navbar_option_4 %}
+                    <li class="nav-item">
+                        <a class="btn btn-secondary navbar-btn" type="button"  
+                            href="{% url option_url %}">{% translate option_label %}</a>
+                        </li>
+                    {% endblock %}
+                    
+                    {% block navbar_option_5 %}
+                    <li class="nav-item">
+                        <a class="btn btn-secondary navbar-btn" type="button"  
+                            href="{% url option_url %}">{% translate option_label %}</a>
+                        </li>
+                    {% endblock %}
+                    
+                    {% block navbar_option_6 %}
+                    <li class="nav-item">
+                        <a class="btn btn-secondary navbar-btn" type="button"  
+                            href="{% url option_url %}">{% translate option_label %}</a>
+                        </li>
+                    {% endblock %}
                 
-                {% block navbar_option_2 %}
-                <li class="nav-item">
-                    <a class="btn btn-secondary navbar-btn" type="button"  
-                        href="{% url option_url %}">{% translate option_label %}</a>
-                    </li>
-                {% endblock %}
-                
-                {% block navbar_option_3 %}
-                <li class="nav-item">
-                    <a class="btn btn-secondary navbar-btn" type="button"  
-                        href="{% url option_url %}">{% translate option_label %}</a>
-                    </li>
-                {% endblock %}
-                
-                {% block navbar_option_4 %}
-                <li class="nav-item">
-                    <a class="btn btn-secondary navbar-btn" type="button"  
-                        href="{% url option_url %}">{% translate option_label %}</a>
-                    </li>
-                {% endblock %}
-                
-                {% block navbar_option_5 %}
-                <li class="nav-item">
-                    <a class="btn btn-secondary navbar-btn" type="button"  
-                        href="{% url option_url %}">{% translate option_label %}</a>
-                    </li>
-                {% endblock %}
-                
-                {% block navbar_option_6 %}
-                <li class="nav-item">
-                    <a class="btn btn-secondary navbar-btn" type="button"  
-                        href="{% url option_url %}">{% translate option_label %}</a>
-                    </li>
-                {% endblock %}
-            
-            </ul>
+                </ul>
+            </div>
         </div>
     </nav>
 

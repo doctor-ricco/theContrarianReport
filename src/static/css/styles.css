@@ -24,6 +24,14 @@ body {
   width: 100%;
 }
 
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 .navbar-brand {
   display: flex !important;
   align-items: center !important;
@@ -46,11 +54,6 @@ body {
 .navbar-collapse {
   display: flex !important;
   justify-content: center !important;
-}
-
-.navbar .container {
-  display: flex;
-  justify-content: space-between;
 }
 
 .navbar-btn {
