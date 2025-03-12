@@ -25,6 +25,8 @@ body {
 }
 
 .navbar-brand {
+  display: flex !important;
+  align-items: center !important;
   font-weight: 800;
   font-size: 1.8rem;
   color: var(--primary-color) !important;
@@ -181,7 +183,7 @@ body {
 
 .btn-danger:hover {
   color: #fff;
-  background-color: var(--accent-color);
+  background-color: #dc3545 !important; 
   transform: scale(1.05);
 }
 
@@ -486,4 +488,11 @@ small.text-muted {
 .container input[type="submit"].btn-primary {
   border-radius: 5px !important;
   margin: 0 !important; /* Mantém a margem 0 do estilo inline */
+}
+
+/* Estilo para a logo */
+.navbar-logo {
+    height: 30px;  /* Ajuste a altura conforme necessário */
+    width: auto;   /* Mantém a proporção da imagem */
+    margin-right: 10px;  /* Espaço entre a logo e o texto */
 }
